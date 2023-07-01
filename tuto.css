@@ -1,0 +1,191 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #3333334b;
+}
+.container{
+    background: #333333c2;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    
+
+}
+.container ul{
+    display: inline-flex;
+    position: absolute;
+    right: 30px;
+    
+}
+.container li{
+    padding: 15px;
+    color: wheat;
+    border-inline-start: 1px solid #3333339c;
+}
+.container li:hover{
+    background: #33333388;
+}
+.container a{
+    color: white;
+}
+
+
+/* .block {
+
+    
+} */
+
+/* ---------- Block des images start ---------- */
+
+.search{
+    display: block;
+    width: 50%;
+    /* background: #4444448f; */
+    height: 200px;
+    margin: 0 auto;
+    padding: 30px 0 0px 0;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.search h1{
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.search input[type=search] {
+    padding: 12px;
+    width: 340px;
+    border: 1px solid #00000073;
+
+
+}
+.search button{
+    padding: 12px;
+    margin-left: -5px;
+    background: #4a4;
+    border: 2px solid #484;
+    border-radius: 5px;
+
+}
+input::placeholder{
+    font-size: 1.3em;
+    border: none;
+
+}
+
+/* ---------------- Block picture ---------------  */
+
+.Picture{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    
+    width: 90%;
+    background: #0000002a;
+    margin: 0 auto;
+    height: 500px;
+    box-sizing: content-box;
+
+}
+.image{
+    background: hsla(0, 0%, 0%, 0.384);
+    margin: 10px;
+    color: white;
+    /* box-shadow: 1px 2px 11px #cf505065; */
+    box-shadow: wheat 6px 4px 12px 1px;
+}
+/* .image:hover{
+    
+   
+     translate: 14px;  
+} */
+img{
+    width: 190px;
+    height: 130px;
+    object-fit: cover;
+    }
+
+.block1{
+    background: #d3cdcd5e;
+    padding: 60px 30px;
+
+}
+.block1 h2{
+    text-align: center;
+    font-size: 2em;
+    
+}
+.block1 p{
+    width: 95%;
+    text-align: center;
+}
+.slider{
+    width: 90%;
+    margin: 0 auto;
+    background: wheat;
+    height: 500px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    
+
+
+}
+.slider img{
+    height: auto;
+    width: 90%;
+    position: absolute;
+    right: 10px;
+    
+
+    
+}
+.img{
+    visibility: hidden;
+    
+}
+
+/* ------------ autre partie de mon code ------- */
+.search button:hover{
+    background: rgb(23, 212, 23);
+    transition: .5s ease-in-out;
+
+}
+
+/* ------ End */
+
+
+
+
+
+
+
+/* ----------- Responsivité ------------ */
+@media screen and (max-width: 400px) {
+    .container ul{
+        right: 5px;
+    }
+    .container li{
+        padding: 5px;
+    }
+
+    
+}
